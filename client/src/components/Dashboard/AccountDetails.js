@@ -68,7 +68,9 @@ export default function AccountDetails() {
                           Total Balance
                         </dt>
                         <dd className=" text-5xl font-bold tracking-tight text-indigo-600">
-                        $ { (totalIncome + account?.initialBalance - totalExpenses).toFixed(2) }
+                        {/* $ { (totalIncome + account?.initialBalance - totalExpenses).toFixed(2) } */}
+                        $ { (totalIncome + account?.initialBalance - totalExpenses) }
+
                         </dd>
                       </div>
                       <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
