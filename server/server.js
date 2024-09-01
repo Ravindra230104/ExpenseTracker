@@ -15,7 +15,7 @@ app.use(express.json())   // pass incoming data
 // cors middlewares
 app.use(cors(
     {
-        origin: ["https://deploy-mern-1whq.vercel.app"],
+        origin: ["https://expense-tracker-ygp9.vercel.app/"],
         methods: ["POST","GET"],
         credentials: true
     }
