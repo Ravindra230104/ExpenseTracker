@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { accountContext } from "../Context/AccountContext/AccountContext";
 
 export default function AddAccount() {
@@ -9,16 +10,22 @@ export default function AddAccount() {
     initialBalance: "",
     notes: "",
   });
+  const navigate = useNavigate(); // Initialize navigate using useNavigate
 
-  //handle form change
+  // Set default value for id
+  const [id, setId] = useState("661407348b26070ec2d83c81");
+
+  // Handle form change
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  //handle form submit
+  // Handle form submit
   const handleSubmit = e => {
     e.preventDefault();
     createAccountAction(formData);
+    // Redirect to Add Transaction page using the default id
+    navigate(`/add-transaction/${id}`);
   };
 
   return (

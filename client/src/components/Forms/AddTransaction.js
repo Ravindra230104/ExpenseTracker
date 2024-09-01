@@ -90,6 +90,7 @@ export default function AddTransaction() {
                   onChange={handleChange}
                   className="mt-1 block w-full border-2 rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                 >
+                  {/* <option value="Personal">Personal</option> */}
                   <option value="Food">Food</option>
                   <option value="Transportation">Transportation</option>
                   <option value="Entertainment">Entertainment</option>
@@ -98,7 +99,6 @@ export default function AddTransaction() {
                   <option value="Health">Health</option>
                   <option value="Travel">Travel</option>
                   <option value="Education">Education</option>
-                  <option value="Personal">Personal</option>
                   <option value="Groceries">Groceries</option>
                   <option value="Bills">Bills</option>
                   <option value="Uncategorized">Uncategorized</option>
