@@ -18,6 +18,7 @@ const transactionSchema = new mongoose.Schema({
     category:{
         type:String,
         enum:[
+            "Personal",
             "Food",
             "Transportation",
             "Entertainment",
@@ -26,7 +27,6 @@ const transactionSchema = new mongoose.Schema({
             "Health",
             "Travel",
             "Education",
-            "Personal",
             "Groceries",
             "Bills",
             "Uncategorized",
